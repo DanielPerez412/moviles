@@ -8,7 +8,7 @@ class ContadorNumerico extends StatefulWidget {
 }
 
 class _ContadorNumericoState extends State<ContadorNumerico> {
-  int _quantity = 0; 
+  int _quantity = 0;
   final int _max = 20;
 
   void _increase() {
@@ -41,16 +41,16 @@ class _ContadorNumericoState extends State<ContadorNumerico> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: const Color(0xFF6C3FE0), width: 2),
+        border: Border.all(color: const Color.fromARGB(255, 41, 82, 194), width: 2),
       ),
       child: Column(
         children: [
           Text(
             '$_quantity',
             style: TextStyle(
-              fontSize: 48 + _quantity.toDouble(), 
+              fontSize: 48 + _quantity.toDouble(),
               fontWeight: FontWeight.bold,
-              color: const Color(0xFF6C3FE0),
+              color: const Color.fromARGB(255, 41, 82, 194),
             ),
           ),
           const SizedBox(height: 8),
@@ -60,7 +60,7 @@ class _ContadorNumericoState extends State<ContadorNumerico> {
             height: 12,
             width: 10.0 + (_quantity * 12),
             decoration: BoxDecoration(
-              color: _quantity >= _max ? Colors.red : const Color(0xFFFF7A59),
+              color: _quantity >= _max ? Colors.blue : const Color.fromARGB(255, 41, 82, 194),
               borderRadius: BorderRadius.circular(6),
             ),
           ),
@@ -82,7 +82,8 @@ class _ContadorNumericoState extends State<ContadorNumerico> {
           const SizedBox(height: 12),
           TextButton(onPressed: _reset, child: const Text('Reiniciar')),
           if (_quantity >= _max)
-            const Text('Límite máximo alcanzado', style: TextStyle(color: Colors.red)),
+            const Text('Límite máximo alcanzado',
+                style: TextStyle(color: Colors.red)),
         ],
       ),
     );

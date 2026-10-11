@@ -29,7 +29,7 @@ class ChatTile extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 26,
-            backgroundColor: const Color(0xFF6C3FE0),
+            backgroundColor: const Color.fromARGB(255, 41, 82, 194),
             foregroundImage: NetworkImage(avatarUrl),
             child: Text(name[0], style: const TextStyle(color: Colors.white)),
           ),
@@ -58,7 +58,7 @@ class ChatTile extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF6C3FE0),
+                    color: const Color.fromARGB(255, 41, 82, 194),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(

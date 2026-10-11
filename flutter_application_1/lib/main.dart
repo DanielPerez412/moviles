@@ -73,8 +73,9 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
           ),
         ),
         SizedBox(
-          height:
-              500, 
+          height: 500,
+          child: PostCard(
+            // <- FALTABA ESTO
             userName: 'MR grasoso',
             avatarUrl: 'https://picsum.photos/id/64/100/100',
             imageUrl:
@@ -83,8 +84,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
           ),
         ),
         SizedBox(
-          height:
-              500, 
+          height: 500,
           child: PostCard(
             userName: 'Gonzaval06',
             avatarUrl:

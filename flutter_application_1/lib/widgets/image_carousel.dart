@@ -47,7 +47,7 @@ class _TarjetaCarrusel extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.grey.shade300,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: const Color(0xFF6C3FE0), width: 2),
+        border: Border.all(color: const Color.fromARGB(255, 41, 82, 194), width: 2),
         image: DecorationImage(
           image: NetworkImage(imageUrl),
           fit: BoxFit.cover,
