@@ -77,7 +77,8 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
           child: PostCard(
             // <- FALTABA ESTO
             userName: 'MR grasoso',
-            avatarUrl: 'https://picsum.photos/id/64/100/100',
+            avatarUrl:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyHfB1XZAWTQpCexH0w1MEy4d58nmuuQBm38GdYXgiFadNBytc6ejUiQA&s=10',
             imageUrl:
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjmr5khKR44wbb79IR3eTdIsgQU5LMts92vvmTpmM2qmEtJkKlmSihFV4&s=10',
             description: 'YA SABES QUE TIENES QUE HACER.',
